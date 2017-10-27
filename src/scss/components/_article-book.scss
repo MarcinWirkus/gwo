@@ -1,0 +1,32 @@
+.books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+
+    &__title {
+        font-size: 20px;
+
+        @include media-breakpoint-up(sm) {
+            min-height: 100px;
+        }
+    }
+
+    &__cover {
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+
+    &__levels {
+        font-size: 14px;
+        padding: 3px 6px;
+        background-color: $gray-200;
+    }
+
+    p {
+        margin-bottom: 3px;
+    }
+}
